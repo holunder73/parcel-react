@@ -1,19 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Header from './components/Header'
-import './scss/app.scss'
 
 class HelloMessage extends React.Component {
-    render() {
-        return <div>
-            <Header/>
-            <div className="container">
-                <h1>Hello {this.props.name}</h1>
-            </div>
-        </div>
-    }
+  render() {
+    return <div>Hello {this.props.name}</div>;
+  }
 }
 
-let App = document.getElementById("app");
-
-ReactDOM.render(<HelloMessage name="Yomi" />, App);
+var mountNode = document.getElementById("app");
+ReactDOM.render(<HelloMessage name="Jane" />, mountNode);
