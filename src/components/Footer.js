@@ -5,7 +5,7 @@ const Footer = () => (
     <nav className="footer">
       <div className="navbar-brand">
         <p className="navbar-item">
-          Text
+          Footer Text
         </p>
       </div>
     </nav>
